@@ -12,5 +12,6 @@ lazy val sunblock = (project in file("sunblock")).settings(
     (hepek in Compile).value
   },
   WebKeys.webModulesLib := "site/lib",
-  git.remoteRepo := "git@github.com:sorenbug/sunblock.git",
+  git.remoteRepo := "https://github.com/sorenbug/sunblock.git",
+  siteSourceDirectory := target.value / "web" / "public" / "main" / "site",
 ).enablePlugins(SbtWeb, HepekPlugin, GhpagesPlugin)
