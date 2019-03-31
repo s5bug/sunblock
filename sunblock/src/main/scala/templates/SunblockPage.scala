@@ -39,12 +39,11 @@ object SunblockPage {
     ChatChat ::
       Nil
 
-  def navBar(o: SunblockPage): Frag = container(
+  def navBar(o: SunblockPage): Frag =
     list(
       games.sortBy(_.subName).map { p =>
         itemize(all.a(all.href := p.relPath().toString.drop(5))(p.subName), p.subName == o.subName)
       }: _*
     )
-  )
 
 }
