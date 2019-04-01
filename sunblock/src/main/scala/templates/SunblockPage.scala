@@ -6,7 +6,7 @@ import scalatags.Text.all
 import scalatags.text.Frag
 import scalatags.Text.implicits._
 import site.Index
-import site.games.ChatChat
+import site.games.{ChatChat, FiveXMan}
 import templates.bulma.BulmaOps._
 import templates.bulma.BulmaPage
 
@@ -37,6 +37,7 @@ object SunblockPage {
 
   val games: List[SunblockPage] =
     ChatChat ::
+    FiveXMan ::
       Nil
 
   def navBar(o: SunblockPage): Frag =
