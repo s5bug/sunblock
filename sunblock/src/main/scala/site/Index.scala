@@ -4,8 +4,6 @@ import ba.sake.hepek.html.structure.PageSettings
 import scalatags.{Text, text}
 import scalatags.Text.implicits._
 import templates.SunblockPage
-import templates.bulma.BulmaPage
-import templates.bulma.BulmaOps._
 
 object Index extends SunblockPage {
 
