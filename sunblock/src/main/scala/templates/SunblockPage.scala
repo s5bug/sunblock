@@ -8,7 +8,7 @@ import scalatags.Text.all.{cls, div}
 import scalatags.text.Frag
 import scalatags.Text.implicits._
 import site.Index
-import site.games.{ChatChat, FiveXMan}
+import site.games.{ChatChat, DuckLifeFour, FiveXMan}
 
 trait SunblockPage extends BulmaStaticPage {
 
@@ -43,6 +43,7 @@ object SunblockPage {
   val games: List[SunblockPage] =
     ChatChat ::
     FiveXMan ::
+    DuckLifeFour ::
       Nil
 
   import ba.sake.hepek.bulma.component.ListComponents._
